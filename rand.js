@@ -31,11 +31,11 @@ var colors = [
   'black',
   'cyan',
   'gold',
-  'coral'
-  'dark magenta'
-  'deep pink'
-  'indian red'
-  'powder blue'
+  'coral',
+  'dark magenta',
+  'deep pink',
+  'indian red',
+  'powder blue',
   'plum'
   
 ];
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
   for (let i=0; i<students.length; i++) {
     let li = document.createElement('li');
     ul.innerText = students[i];
-    aList.append(il);
+    aList.append(li);
   }
 });
 
