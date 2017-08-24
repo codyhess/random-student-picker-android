@@ -14,6 +14,8 @@ body {
   font-family: Didot;
   background-color: salmon;
   text-align: center;
+  
+  <ul style="list-style: none;"><li>
 }
 
 button {
