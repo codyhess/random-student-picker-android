@@ -16,8 +16,13 @@ body {
   text-align: center;
 }
 
-button {
-  font-size: 40px;
+button1 {
+  font-size: 30px;
+  font-family: Didot;
+}
+
+button2 {
+  font-size: 30px;
   font-family: Didot;
 }
 
