@@ -28,7 +28,16 @@ var colors = [
   'orange',
   'fuchsia', 0,
   'lightblue', 0,
-  'black'
+  'black',
+  'cyan',
+  'gold',
+  'coral'
+  'dark magenta'
+  'deep pink'
+  'indian red'
+  'powder blue'
+  'plum'
+  
 ];
 var cur = 0;
 
@@ -48,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
   for (let i=0; i<students.length; i++) {
     let li = document.createElement('li');
     ul.innerText = students[i];
-    aList.append(ul);
+    aList.append(il);
   }
 });
 
