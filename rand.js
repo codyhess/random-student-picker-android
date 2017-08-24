@@ -55,11 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
   aList.addEventListener('click', aListOnClick );
 
   // build the attendance list
-  for (let i=0; i<students.length; i++) {
-    let ul = document.createElement('ul');
+ for (let i=0; i<students.length; i++) {
+    let li = document.createElement('li');
     li.innerText = students[i];
     aList.append(li);
-    <ul style="list-style: none;"><li>
   }
 });
 
