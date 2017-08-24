@@ -3,7 +3,7 @@ var header;
 var body;
 var choice;
 var aList;
-
+<ul style="list-style: none;"><li>
 var students = [
   "Kevin",
   "Jonathan",
