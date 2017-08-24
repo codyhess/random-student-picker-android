@@ -12,9 +12,10 @@ body {
   height: 100vh;
 
   font-family: fantasy;
-  background-color: lightblue;
+  background-image: url (http://wallpapercave.com/wp/kSQdCxM.jpg);
   text-align: center;
 }
+
 
 button {
   font-size: 24px;
