@@ -1,0 +1,26 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 24px;
+  width: 25em;
+  margin: 0 auto;
+  padding: 0.5em 0;
+
+  height: 100vh;
+
+  font-family: Didot;
+  background-color: salmon;
+  text-align: center;
+}
+
+button {
+  font-size: 24px;
+  font-family: Didot;
+}
+
+img {
+  max-width: 60%;
+}
