@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let ul = document.createElement('ul');
     ul.innerText = students[i];
     aList.append(li);
-    <ul style="list-style: none;"><ul>
+    <ul style="list-style: none;"><li>
   }
 });
 
