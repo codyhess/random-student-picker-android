@@ -12,8 +12,12 @@ body {
   height: 100vh;
 
   font-family: fantasy;
-  background-image: url (http://wallpapercave.com/wp/kSQdCxM.jpg);
   text-align: center;
+}
+
+body {
+  background-image: url (https://www.pixelstalk.net/wp-content/uploads/2016/06/Galaxy-background-tumblr.jpg);
+  
 }
 
 
