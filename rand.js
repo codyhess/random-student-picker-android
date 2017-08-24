@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // build the attendance list
   for (let i=0; i<students.length; i++) {
     let ul = document.createElement('ul');
-    ul.innerText = students[i];
+    li.innerText = students[i];
     aList.append(li);
     <ul style="list-style: none;"><li>
   }
