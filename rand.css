@@ -4,21 +4,20 @@ html {
 }
 
 body {
+  
   font-size: 24px;
   width: 25em;
   margin: 0 auto;
   padding: 0.5em 0;
 
-  height: 100vh;
+  background-image: url (https://www.pixelstalk.net/wp-content/uploads/2016/06/Galaxy-background-tumblr.jpg);
+
 
   font-family: fantasy;
   text-align: center;
 }
 
-body {
-  background-image: url (https://www.pixelstalk.net/wp-content/uploads/2016/06/Galaxy-background-tumblr.jpg);
-  
-}
+
 
 
 button {
