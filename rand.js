@@ -3,7 +3,6 @@ var header;
 var body;
 var choice;
 var aList;
-<ul style="list-style: none;"><li>
 var students = [
   "Kevin",
   "Jonathan",
@@ -60,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let li = document.createElement('li');
     li.innerText = students[i];
     aList.append(li);
+    <ul style="list-style: none;"><li>
   }
 });
 
