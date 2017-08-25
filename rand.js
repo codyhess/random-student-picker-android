@@ -58,13 +58,13 @@ document.addEventListener('DOMContentLoaded', () => {
  for (let i=0; i<students.length; i++) {
     let ul = document.createElement('ul');
     ul.innerText = students[i];
-    aList.append(ul);
+       aList.append(ul);
   }
 });
 
 var pickOnClick = function (event) {
   choice.innerHTML = '&nbsp;'
-  var rand = students[Math.floor(Math.random() * students.length)];
+  var rand = students[Math.floor(Math.random() * students.length-1)];
   var x = window.setInterval(() => {
     if (colors[cur] === undefined) {
       window.clearInterval(x);
@@ -81,5 +81,6 @@ var pickOnClick = function (event) {
 var aListOnClick = function (event) {
   if (event.target.tagName === 'LI') {
     event.target.style.textDecoration = 'line-through';
+   
   }
 }
