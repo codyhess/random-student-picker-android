@@ -58,9 +58,31 @@ document.addEventListener('DOMContentLoaded', () => {
  for (let i=0; i<students.length; i++) {
     let ul = document.createElement('ul');
     ul.innerText = students[i];
-     aList.append(ul);
+    aList.append(ul);
+   
+
   }
 });
+
+function nameRepeat(students) {
+  var copy = students.slice(0);
+  return nameRepeat() {
+     if (copy.length < 1) { copy = students.slice(0); }
+    var index = Math.floor(Math.random() * copy.length);
+    var item = copy[index];
+    copy.splice(index, 1);
+    return item;
+  };
+}
+
+var chooser = nameRepeat(['Foo', 'Bar', 'Gah']);
+chooser(); // => "Bar"
+chooser(); // => "Foo"
+chooser(); // => "Gah"
+chooser(); // => "Foo" -- only repeats once all items are exhausted.
+  if (event.target.tagName === 'LI') {
+    event.target.style.textDecoration = 'line-through';
+
 
 var pickOnClick = function (event) {
   choice.innerHTML = '&nbsp;'
@@ -77,10 +99,7 @@ var pickOnClick = function (event) {
     cur += 1;
   }, 200);
 }
-
-var aListOnClick = function (event) {
-  if (event.target.tagName === 'LI') {
-    event.target.style.textDecoration = 'line-through';
+ 
    
   }
 }
