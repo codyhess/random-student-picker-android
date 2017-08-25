@@ -80,8 +80,7 @@ chooser(); // => "Bar"
 chooser(); // => "Foo"
 chooser(); // => "Gah"
 chooser(); // => "Foo" -- only repeats once all items are exhausted.
-  if (event.target.tagName === 'LI') {
-    event.target.style.textDecoration = 'line-through';
+  
 
 
 var pickOnClick = function (event) {
@@ -99,6 +98,8 @@ var pickOnClick = function (event) {
     cur += 1;
   }, 200);
 }
+if (event.target.tagName === 'LI') {
+    event.target.style.textDecoration = 'line-through';
  
    
   }
