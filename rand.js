@@ -11,7 +11,7 @@ var students = [
   "Eric",
   "Janette",
   "Desmond",
-  "Ashiya",
+  "Asiya",
   "Monica",
   "Susana",
   "Deborah",
@@ -24,11 +24,27 @@ var students = [
 ];
 
 var colors = [
-  'hotpink',
-  'orange',
+  'yellow',
+  'yellowgreen',
+  'palegreen', 0,
   'fuchsia', 0,
-  'lightblue', 0,
-  'black'
+  'mediumspringgreen',
+  'lime',
+  'magenta',
+  'hotpink',
+  'lawngreen',
+  'greenyellow',
+  'mediumorchid',
+  'aqua',
+  'crimson,
+  'cyan',
+  'chartreuse',
+  'darkorange'
+  
+  
+  
+  
+  
 ];
 var cur = 0;
 
