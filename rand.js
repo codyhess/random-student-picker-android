@@ -26,19 +26,18 @@ var students = [
 var colors = [
   'yellow',
   'yellowgreen',
-  'palegreen', 0,
+   'hotpink',
+  'orange',
   'fuchsia', 0,
-  'mediumspringgreen',
+  'lightblue', 0,
   'lime',
   'magenta',
   'hotpink',
   'lawngreen',
   'greenyellow',
-  'mediumorchid',
   'aqua',
   'crimson,
   'cyan',
-  'chartreuse',
   'darkorange'
   
   
