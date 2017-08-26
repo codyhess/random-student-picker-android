@@ -24,26 +24,11 @@ var students = [
 ];
 
 var colors = [
-  'yellow',
-  'yellowgreen',
-   'hotpink',
+  'hotpink',
   'orange',
   'fuchsia', 0,
   'lightblue', 0,
-  'lime',
-  'magenta',
-  'hotpink',
-  'lawngreen',
-  'greenyellow',
-  'aqua',
-  'crimson,
-  'cyan',
-  'darkorange'
-  
-  
-  
-  
-  
+  'black'
 ];
 var cur = 0;
 
@@ -61,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // build the attendance list
   for (let i=0; i<students.length; i++) {
-    let ul = document.createElement('ul');
+    let ul = document.createElement('li');
     ul.innerText = students[i];
     aList.append(ul);
   }
