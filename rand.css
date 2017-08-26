@@ -16,10 +16,15 @@ body {
   text-align: center;
 }
 
+ul { 
+  list-style-type: none;
+}
+
 button {
   font-size: 24px;
   font-family: palatino;
 }
+
 
 img {
   max-width: 60%;
