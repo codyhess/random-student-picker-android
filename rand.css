@@ -11,14 +11,14 @@ body {
 
   height: 100vh;
 
-  font-family: garamond;
+  font-family: palatino;
   background-color: lightcoral;
   text-align: center;
 }
 
 button {
   font-size: 24px;
-  font-family: garamond;
+  font-family: palatino;
 }
 
 img {
