@@ -24,12 +24,12 @@ var students = [
   "Shonica",
   "Krystal"
 ];
-var titles = [
+var titles = [ //random titles because I can't recall them all
   "The Giver",
   "The Destroyer",
   "The Evil One",
-  "The DragonSlayer",
-  "The Queen Of Dragons",
+  "The Dragon Slayer",
+  "The Mother Of Dragons",
   "The Silent One",
   "The Shadow",
   "The Knower Of Things",
