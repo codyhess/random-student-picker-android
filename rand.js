@@ -62,17 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
     aList.append(ul);
   }
 });
-function shuffle(a) {
-    for (let i = a.length; i; i--) {
-        let j = Math.floor(Math.random() * i);
-        [a[i - 1], a[j]] = [a[j], a[i - 1]];
-    }
-}
+
 
 var pickOnClick = function (event) {
   choice.innerHTML = '&nbsp;'
-  var rand = students[Math.floor(Math.random() * students.length)];
-  shuffle(students)
+  var rand = students.splice(Math.floor(Math.random() * students.length),1);
   var x = window.setInterval(() => {
     if (colors[cur] === undefined) {
       window.clearInterval(x);
