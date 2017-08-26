@@ -28,15 +28,13 @@ var colors = [
   'orange',
   'fuchsia', 0,
   'lightblue', 0,
-  'black',
   'coral',
-  'crimson',
-   'gold',
+  'gold',
   'indianred',
   'palevioletred',
   'cyan',
-  'tomato'
-  
+  'tomato',
+  'crimson'
   
 ];
 var cur = 0;
