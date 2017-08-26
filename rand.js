@@ -23,6 +23,7 @@ var students = [
   "Krystal"
 ];
 
+
 var colors = [
   'hotpink',
   'orange',
@@ -37,6 +38,9 @@ var colors = [
   'crimson'
   
 ];
+
+
+
 var cur = 0;
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -58,10 +62,17 @@ document.addEventListener('DOMContentLoaded', () => {
     aList.append(ul);
   }
 });
+function shuffle(a) {
+    for (let i = a.length; i; i--) {
+        let j = Math.floor(Math.random() * i);
+        [a[i - 1], a[j]] = [a[j], a[i - 1]];
+    }
+}
 
 var pickOnClick = function (event) {
   choice.innerHTML = '&nbsp;'
   var rand = students[Math.floor(Math.random() * students.length)];
+  shuffle(students)
   var x = window.setInterval(() => {
     if (colors[cur] === undefined) {
       window.clearInterval(x);
@@ -74,6 +85,8 @@ var pickOnClick = function (event) {
     cur += 1;
   }, 200);
 }
+
+
 
 var aListOnClick = function (event) {
   if (event.target.tagName === 'LI') {
