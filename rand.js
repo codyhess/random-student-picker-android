@@ -45,17 +45,15 @@ var titles = [
 
 
 var colors = [
-  'hotpink',
-  'orange',
-  'fuchsia', 0,
-  'lightblue', 0,
-  'coral',
+  '#840000',
+  'goldenrod',
+  '#5e2228',
+  '#f5dc28',
+  '#3e2628',
   'gold',
   'indianred',
-  'palevioletred',
-  'cyan',
-  'tomato',
-  'crimson'
+  '#fbd128',
+  '#902e28'
   
 ];
 
