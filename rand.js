@@ -1,67 +1,67 @@
 var pickButton;
 var pairButton;
+var aramButton;
 var header;
 var body;
 var choice;
-var aList;
 var titles;
 
 var students = [
- "Guzal",
- "Chaltin",
- "Angel",
- "Cesa",
- "Asiya",
- "Drew",
- "Ivan",
- "Shanda",
- "John",
- "Thomas",
- "Stephanie",
- "Krystal",
- "Vanessa",
- "Rachel",
- "Rafael",
- "Susan",
- "Emin",
- "Steve",
- "AJ",
- "Tasi",
- "Deborah",
- "Eric",
- "Lucy",
- "Janette",
- "Monica",
- "Kevin",
- "Fabio",
- "Asia",
- "Julissa",
- "Mike",
- "Sheriff",
- "James",
- "Crystal",
- "Susana",
- "Kyla",
- "Omari"
+  "Jervon Arnold",
+  "Daniel Cortes",
+  "Ashley Joachim",
+  "Muaadh Melhi",
+  "Anne Kochanski",
+  "Victoria Leon",
+  "Mustafizur Matin",
+  "Tatiana Moronta",
+  "Darnell Otto",
+  "Amar Ahmed",
+  "Amirah Oxendine",
+  "Amy Rivera",
+  "Anas Chikh",
+  "Boubacar Bah",
+  "Bryant Ramirez",
+  "Francisco Andrade",
+  "Joanne Song",
+  "LaQuana Chisolm",
+  "Lelucksamee Ampawa",
+  "Melina Gonzalez",
+  "Mohammad Naz",
+  "Muhaimen Noor",
+  "Murodjon Rahimov",
+  "Niema Widaha",
+  "Nikunjan GC",
+  "Kevin Toro",
+  "Oleg Siboglov",
+  "Shantal Taveras",
+  "Siran LI",
+  "Taishawn Williams",
+  "Tariqua Nehisi",
+  "Vivian Kulumba",
+  "Volha Kaleda",
+  "Wayne Kellman",
+  "Yisandy Marte",
+  "Yoke Yen Lam",
 ];
 
 var titles = [
-  "The Giver",
-  "The Destroyer",
-  "The Evil One",
-  "The DragonSlayer",
-  "The Queen Of Dragons",
-  "The Silent One",
-  "The Shadow",
-  "The Knower Of Things",
-  "The Drinker Of Wine ",
-  "The WebMaster",
-  "The Internet Troll",
-  "The Hacker Named 4Chan",
-  "The Gift Wrapper",
-  "The Indecisive",
-  "The Jazz Guitarist",
-  "The One Who Writes Titles"
+  "The Just",
+  "The Magnificent",
+  "The Magnanimous",
+  "The Furious",
+  "The The Golden Hearted",
+  "The Clever",
+  "The Great Wit",
+  "The Kind",
+  "The Caring",
+  "The Jovial",
+  "The Courageous",
+  "Whose Friendship is Magic",
+  "Lover of Trail Mix",
+  "The Caffeinated",
+  "The Jazz Pianist",
+  "The Java Whisperer",
 ];
 
 
@@ -77,9 +77,6 @@ var colors = [
   '#480000',
   '#fbdd45',
   '#880000 ',
-
-  
-  
 ];
 
 
@@ -93,22 +90,13 @@ document.addEventListener('DOMContentLoaded', () => {
   header = document.getElementById('header');
   pickButton = document.getElementById('pickButton');
   pairButton = document.getElementById('pairButton');
+  aramButton = document.getElementById('aramButton');
   
   choice = document.getElementById('choice');
-  aList = document.getElementById('aList');
 
   pickButton.addEventListener('click', pickOnClick );
   pairButton.addEventListener('click', pairClick );
-  
-  aList.addEventListener('click', aListOnClick );
-
-  // build the attendance list
-  for (let i=0; i<students.length; i++) {
-    let li = document.createElement('li');
-    li.innerText = students[i];
-    aList.append(li);
-    
-  }
+  aramButton.addEventListener('click', aramOnClick );
 });
 
 
@@ -155,10 +143,15 @@ var pairClick = function (event) {
   }, 200);
 }
 
-
-var aListOnClick = function (event) {
-  if (event.target.tagName === 'LI') {
-    event.target.style.textDecoration = 'line-through';
+var aramOnClick = function (event) {
+  while (students.length) {
+    var i = Math.floor(Math.random() * students.length);
+    console.log(i);
+    console.log(students[i]);
+    var s = students.splice(i, 1);
+    console.log(s);
+    var el = document.createElement('p');
+    el.innerText = s;
+    choice.appendChild(el);
   }
 }
-
