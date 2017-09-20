@@ -12,7 +12,8 @@ body {
   height: 100vh;
 
   font-family: palatino;
-  background-color:#200000; font-color:goldenrod;
+  background-color: lightseagreen;
+  font-color: goldenrod;
   text-align: center;
 }
 
@@ -21,8 +22,9 @@ ul {
 }
 
 button { 
-  background-color: black;
-  font-size: 24px; color:white;
+  background-color: darkseagreen;
+  font-size: 24px;
+  color: black;
   font-family: palatino;
 
  
