@@ -144,6 +144,7 @@ var pairClick = function (event) {
 }
 
 var aramOnClick = function (event) {
+  var studentsCopy = students.slice();
   while (students.length) {
     var i = Math.floor(Math.random() * students.length);
     console.log(i);
@@ -154,4 +155,5 @@ var aramOnClick = function (event) {
     el.innerText = s;
     choice.appendChild(el);
   }
+  students = studentsCopy; // restore students list from backup.
 }
